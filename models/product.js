@@ -12,11 +12,11 @@ const p = path.join(
 );
 
 const getProductsFromFile = cb => {
-  fs.readFile(p, (err, fileContent) => {
+  fs.readFile(p, (err, data) => {
     if (err) {
       cb([]);
     } else {
-      cb(JSON.parse(fileContent));
+      cb(JSON.parse(data));
     }
   });
 };

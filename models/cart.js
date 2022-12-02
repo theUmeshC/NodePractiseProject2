@@ -11,10 +11,10 @@ const p = path.join(
 
 module.exports = class Cart {
   static addProduct(id, productPrice) {
-    fs.readFile(p, (err, fileContent) => {
+    fs.readFile(p, (err, data) => {
       let cart = { products: [], totalPrice: 0 };
       if (!err) {
-        cart = JSON.parse(fileContent);
+        cart = JSON.parse(data);
       }
       const existingProductIndex = cart.products.findIndex(
         prod => prod.id === id
@@ -38,11 +38,11 @@ module.exports = class Cart {
   }
 
   static deleteProduct(id, productPrice) {
-    fs.readFile(p, (err, fileContent) => {
+    fs.readFile(p, (err, data) => {
       if (err) {
         return;
       }
-      const updatedCart = { ...JSON.parse(fileContent) };
+      const updatedCart = { ...JSON.parse(data) };
       const product = updatedCart.products.find(prod => prod.id === id);
       if (!product) {
           return;
@@ -61,8 +61,8 @@ module.exports = class Cart {
   }
 
   static getCart(cb) {
-    fs.readFile(p, (err, fileContent) => {
-      const cart = JSON.parse(fileContent);
+    fs.readFile(p, (err, data) => {
+      const cart = JSON.parse(data);
       if (err) {
         cb(null);
       } else {
