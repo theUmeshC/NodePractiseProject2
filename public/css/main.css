@@ -11,7 +11,7 @@ body {
 }
 
 main {
-  padding: 1rem;
+  padding: 0 1rem;
   margin: auto;
 }
 
@@ -95,6 +95,13 @@ form {
   width: 100%;
 }
 
+.card-details-image{
+  width: 100%;
+}
+
+.card-details-image img{
+  width: 350px;
+}
 .card__actions {
   padding: 1rem;
   text-align: center;
@@ -128,7 +135,7 @@ form {
   color: white;
   width: 100%;
   text-align: center;
-  line-height: 3rem;
+  line-height: 2.5rem;
   position: absolute;
   bottom: 0;
   right: 0;
