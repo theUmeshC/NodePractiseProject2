@@ -15,25 +15,36 @@ main {
   margin: auto;
 }
 
+form {
+  display: inline;
+}
+
+.centered {
+  text-align: center;
+}
+
 .main-header {
   width: 100%;
   height: 3.5rem;
-  background-color: #02309a;
+  background-color: #15058f;
   padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
 }
 
 .main-header__nav {
+  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
 }
 
 .main-header__item-list {
+  width: 100%;
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
-  width: 100%;
   justify-content:space-evenly;
 }
 
@@ -50,7 +61,7 @@ main {
 .main-header__item a:hover,
 .main-header__item a:active,
 .main-header__item a.active {
-  color: #ffe600;
+  color: #ffeb3b;
 }
 
 .grid {
@@ -58,12 +69,10 @@ main {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: stretch;
-  gap: 1rem;
 }
 
 .card {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
-  width: 100px;
 }
 
 .card__header,
@@ -87,19 +96,22 @@ main {
 }
 
 .card__actions {
-    padding: 1rem;
-    text-align: center;
+  padding: 1rem;
+  text-align: center;
 }
 
 .card__actions button,
 .card__actions a {
-    margin: 0 0.25rem;
+  margin: 0 0.25rem;
 }
 
 .btn {
+  display: inline-block;
+  padding: 0.25rem 1rem;
+  text-decoration: none;
   font: inherit;
-  border: 1px solid #02309a;
-  color: #02309a;
+  border: 1px solid #15058f;
+  color: #15058f;
   background: white;
   border-radius: 3px;
   cursor: pointer;
@@ -107,6 +119,31 @@ main {
 
 .btn:hover,
 .btn:active {
-  background-color: #02309a;
+  background-color: #15058f;
   color: white;
+}
+
+.cart-total-price{
+  background-color: #15058f;
+  color: white;
+  width: 100%;
+  text-align: center;
+  line-height: 3rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.cart-list-items{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 350px;
+}
+
+.cart-list-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
