@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 
 * {
   box-sizing: border-box;
@@ -7,7 +7,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 main {
@@ -45,7 +45,7 @@ form {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
 }
 
 .main-header__item {
@@ -95,11 +95,11 @@ form {
   width: 100%;
 }
 
-.card-details-image{
+.card-details-image {
   width: 100%;
 }
 
-.card-details-image img{
+.card-details-image img {
   width: 350px;
 }
 .card__actions {
@@ -130,7 +130,7 @@ form {
   color: white;
 }
 
-.cart-total-price{
+.cart-total-price {
   background-color: #15058f;
   color: white;
   width: 100%;
@@ -141,7 +141,7 @@ form {
   right: 0;
 }
 
-.cart-list-items{
+.cart-list-items {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -149,7 +149,7 @@ form {
   width: 350px;
 }
 
-.cart-list-item{
+.cart-list-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
